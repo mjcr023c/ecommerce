@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:ecommercedb
+    #username: ebzabowaheguxf
+    #password: 412f223380b72ed6b69f0153f530a247adaa584bff3fbd9bdbf0b9405c8925d3
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: true
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate:
+      #ddl-auto: update
+      ddl-auto: create-drop
+  jackson:
+    date-format: yyyy-MM-dd-HH.mm.ss
+      
