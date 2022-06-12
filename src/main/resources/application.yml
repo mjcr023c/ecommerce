@@ -3,8 +3,8 @@ spring:
     url: jdbc:h2:mem:ecommercedb
     #username: ebzabowaheguxf
     #password: 412f223380b72ed6b69f0153f530a247adaa584bff3fbd9bdbf0b9405c8925d3
-    username: sa
-    password: sa
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driverClassName: org.h2.Driver
   h2:
     console.enabled: true
