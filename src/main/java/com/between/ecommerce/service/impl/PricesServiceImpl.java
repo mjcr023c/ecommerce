@@ -26,12 +26,6 @@ public class PricesServiceImpl implements PricesService {
 	private ResponsePriceConverter responsePriceConverter;
 
 	@Override
-	public List<Prices> getPrices(RequestBodyPrices requestBodyPrices) {
-		List<Prices> prices = pricesRepository.findAllByProductIdProduct(requestBodyPrices.getProductId());
-		return prices;
-	}
-
-	@Override
 	public ResponsePrice getPrice(RequestBodyPrices requestBodyPrices) {
 
 		List<Prices> prices = pricesRepository.getPrice(requestBodyPrices.getBrandId(),requestBodyPrices.getProductId(), requestBodyPrices.getNowDateTime());

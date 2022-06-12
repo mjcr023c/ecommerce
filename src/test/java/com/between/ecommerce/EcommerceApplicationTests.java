@@ -17,10 +17,11 @@ import com.between.ecommerce.service.PricesService;
 
 @SpringBootTest
 class EcommerceApplicationTests {
-
+	
 	@Autowired
 	@Qualifier("pricesServiceImpl")
 	private PricesService pricesService;
+	
 
 	/**
 	 * Test 1: petición a las 10:00 del día 14 del producto 35455 para la brand 1
